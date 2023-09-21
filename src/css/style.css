@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+body, input, textarea, button{
+    font-family: 'Montserrat', sans-serif;
+    color: #115e91;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.addTicketButton{
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #115e91;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: 0;
+    transition: 100ms;
+}
+
+.addTicketButton:hover{
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+.addTicketButton:active{
+    background-color: #a8a6a6;
+}
+
+.addTicketFormWrapper, .editTicketFormWrapper, .deleteTicketWrapper{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.addTicketForm, .editTicketForm, .deleteTicket{
+    width: 50%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.deleteTicket{
+    padding: 30px;
+}
+
+.addTicketFormTitle, .editTicketFormTitle, .deleteTicketTitle{
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.deleteTicketTitle{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.formLabel{
+    margin-top: 20px;
+    display:inline-block;
+    font-size: 18px;
+}
+
+.formInput, .formTextarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: solid 1px #115e91;
+    transition: 100ms;
+}
+
+
+.formInput:focus-visible, .formTextarea:focus-visible{
+    outline: solid 2px #3c8abe;
+}
+
+.formTextarea{
+    resize: none;
+    height: 100px;
+}
+
+.formButtons, .deleteButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.formButtons button, .deleteButtons button{
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #115e91;
+    background-color: #ffffff;
+    transition: 100ms;
+}
+
+.formButtons button:hover, .deleteButtons button:hover{
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+.formButtons button:active, .deleteButtons button:hover{
+    background-color: #a8a6a6;
+}
+
+.ticketsList{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.ticket{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #115e91;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 0px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ticketLeft, .ticketRight{
+    display: flex;
+    align-items: center;
+}
+
+.ticketLeft{
+    width: 65%;
+}
+
+.ticketRight{
+    width: 35%;
+}
+
+.ticketDescreption{
+    margin-left: 47px;
+    width: 70%;
+}
+
+.ticketDescreption p{
+    margin-top: 0;
+}
+
+.ticketIcon{
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.ticketName{
+    margin: 0px 10px;
+}
+
+.ticketDate{
+    margin-right: 5px;
+}
+
+.hide{
+    display: none;
+}

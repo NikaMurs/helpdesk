@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+  <title>helpdesk</title>
+</head>
+
+<body>
+  <div class="container">
+    <button class="addTicketButton" type="button">
+      Добавить тикет
+    </button>
+
+    <div class="addTicketFormWrapper hide">
+      <form class="addTicketForm">
+        <h3 class="addTicketFormTitle">Добавить новый тикет</h3>
+        <label class="formLabel" for="name">Краткое описание</label>
+        <input class="formInput" type="text" name="name">
+        <label class="formLabel" for="description">Подробное описание</label>
+        <textarea class="formTextarea" type="description" name="description"></textarea>
+        <div class="formButtons">
+          <button class="formCancelButton" type="button">Отмена</button>
+          <button class="formSubmitButton" type="button">Ок</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="editTicketFormWrapper hide">
+      <form class="editTicketForm">
+        <h3 class="editTicketFormTitle">Изменить тикет</h3>
+        <label class="formLabel" for="name">Краткое описание</label>
+        <input class="formInput" type="text" name="name">
+        <label class="formLabel" for="description">Подробное описание</label>
+        <textarea class="formTextarea" type="description" name="name"></textarea>
+        <div class="formButtons">
+          <button class="formCancelButton" type="button">Отмена</button>
+          <button class="formSubmitButton" type="button">Ок</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="deleteTicketWrapper hide">
+      <div class="deleteTicket">
+        <h3 class="deleteTicketTitle">Вы действительно хотите удалить этот тикет?</h3>
+        <div class="deleteButtons">
+          <button class="cancelButton" type="button">Отмена</button>
+          <button class="submitButton" type="button">Удалить</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticketsList">
+
+    </div>
+  </div>
+</body>
+
+</html>
