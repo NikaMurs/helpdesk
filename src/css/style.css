@@ -141,14 +141,6 @@ body, input, textarea, button{
     align-items: center;
 }
 
-.ticketLeft{
-    width: 65%;
-}
-
-.ticketRight{
-    width: 35%;
-}
-
 .ticketDescreption{
     margin-left: 47px;
     width: 70%;
