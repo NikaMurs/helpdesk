@@ -13,7 +13,10 @@ export default function editTicket(id, element) {
   editTicketFormWrapper.classList.remove("hide");
   ticketsList.classList.add("hide");
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://localhost:7070" + `?method=ticketById&id=${id}`);
+  xhr.open(
+    "GET",
+    "https://helpdeskbackend.onrender.com" + `?method=ticketById&id=${id}`
+  );
   xhr.send();
   xhr.addEventListener("load", () => {
     const response = JSON.parse(xhr.response);

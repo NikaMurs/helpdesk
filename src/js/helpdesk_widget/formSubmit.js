@@ -20,7 +20,10 @@ formSubmitButton.addEventListener("click", (e) => {
   xhr.onreadystatechange = function () {
     if (xhr.readyState !== 4) return;
   };
-  xhr.open("POST", "http://localhost:7070" + "/?method=createTicket");
+  xhr.open(
+    "POST",
+    "https://helpdeskbackend.onrender.com" + "/?method=createTicket"
+  );
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.send(JSON.stringify(ticket));
   xhr.addEventListener("load", () => {

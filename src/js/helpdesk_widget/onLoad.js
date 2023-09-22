@@ -2,7 +2,10 @@ import createTicket from "./createTicket";
 
 window.addEventListener("DOMContentLoaded", () => {
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://localhost:7070" + "/?method=allTickets");
+  xhr.open(
+    "GET",
+    "https://helpdeskbackend.onrender.com" + "/?method=allTickets"
+  );
   xhr.send();
   xhr.addEventListener("load", () => {
     const response = JSON.parse(xhr.response);

@@ -11,7 +11,10 @@ export function updateTickStatus(id, tickStatus) {
     tickStatus: status,
   };
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://localhost:7070" + `/?method=updateById&id=${id}`);
+  xhr.open(
+    "POST",
+    "https://helpdeskbackend.onrender.com" + `/?method=updateById&id=${id}`
+  );
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.send(JSON.stringify(updateTicket));
 }
@@ -22,7 +25,10 @@ export function updateTicket(id, name, description) {
     description,
   };
   const xhr = new XMLHttpRequest();
-  xhr.open("POST", "http://localhost:7070" + `/?method=updateById&id=${id}`);
+  xhr.open(
+    "POST",
+    "https://helpdeskbackend.onrender.com" + `/?method=updateById&id=${id}`
+  );
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.send(JSON.stringify(updateTicket));
 }

@@ -14,7 +14,7 @@ export default function descriptionTicket(elem) {
     const xhr = new XMLHttpRequest();
     xhr.open(
       "GET",
-      "http://localhost:7070" +
+      "https://helpdeskbackend.onrender.com" +
         `?method=ticketById&id=${elem.target.closest(".ticket").dataset.id}`
     );
     xhr.send();

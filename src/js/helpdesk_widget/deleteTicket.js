@@ -10,7 +10,10 @@ export default function deleteTicket(id, element) {
   function submit(e) {
     e.preventDefault();
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://localhost:7070" + `/?method=deleteById&id=${id}`);
+    xhr.open(
+      "GET",
+      "https://helpdeskbackend.onrender.com" + `/?method=deleteById&id=${id}`
+    );
     xhr.send();
     element.remove();
     deleteTicketWrapper.classList.add("hide");
